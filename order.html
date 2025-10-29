@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Order — Kopi Klangenan</title>
+
+  <!-- stylesheet utama -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- stylesheet khusus page (opsional jika ingin dipisah) -->
+  <link rel="stylesheet" href="order.css" media="print" onload="this.removeAttribute('media')">
+  <!-- above line is optional; styles.css below contains the needed rules already -->
+</head>
+<body>
+
+  <!-- NAVBAR (konsisten dengan index.html) -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Kopi<span>Klangenan</span></a>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#menu">Varian</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#visit">Visit</a>
+        <a href="index.html#testimonials">Testimoni</a>
+        <a href="index.html#contact">Contact</a>
+        <a class="btn btn-ghost" href="index.html#order">Order</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO TITLE -->
+  <section class="order-hero">
+    <div class="container">
+      <h1>Order Kopi</h1>
+      <p>Pilih varian yang kamu suka, masukkan jumlah (Qty), lalu pesan via WhatsApp.</p>
+    </div>
+  </section>
+
+  <!-- ORDER GRID (horizontal cards) -->
+  <main class="order-wrap container">
+    <div class="order-row" id="orderRow">
+
+      <!-- CARD: Arabica -->
+      <article class="card" data-name="Arabica" data-price="18000">
+        <div class="thumb"><img src="images/arabica.jpeg" alt="Arabica"></div>
+        <div class="meta">
+          <h3>Arabica</h3>
+          <p class="desc">Rasa halus & aroma bunga, cocok untuk yang suka kopi lembut.</p>
+          <div class="price">Rp 18.000</div>
+
+          <div class="controls">
+            <div class="qty" aria-label="Kuantitas Arabica">
+              <button class="qty-decrease" type="button">−</button>
+              <input class="qty-input" type="number" min="0" max="99" value="0" />
+              <button class="qty-increase" type="button">+</button>
+            </div>
+            <div class="choose">
+              <label><input class="choose-checkbox" type="checkbox" /> Pilih</label>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD: Robusta -->
+      <article class="card" data-name="Robusta" data-price="15000">
+        <div class="thumb"><img src="images/robusta.jpeg" alt="Robusta"></div>
+        <div class="meta">
+          <h3>Robusta</h3>
+          <p class="desc">Body kuat dan kick kafein tinggi — pilihan untuk yang butuh tenaga.</p>
+          <div class="price">Rp 15.000</div>
+
+          <div class="controls">
+            <div class="qty" aria-label="Kuantitas Robusta">
+              <button class="qty-decrease" type="button">−</button>
+              <input class="qty-input" type="number" min="0" max="99" value="0" />
+              <button class="qty-increase" type="button">+</button>
+            </div>
+            <div class="choose">
+              <label><input class="choose-checkbox" type="checkbox" /> Pilih</label>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD: House Blend -->
+      <article class="card" data-name="House Blend" data-price="20000">
+        <div class="thumb"><img src="images/blend.jpeg" alt="House Blend"></div>
+        <div class="meta">
+          <h3>House Blend</h3>
+          <p class="desc">Kombinasi terbaik biji lokal — balance antara aroma dan kekuatan.</p>
+          <div class="price">Rp 20.000</div>
+
+          <div class="controls">
+            <div class="qty" aria-label="Kuantitas House Blend">
+              <button class="qty-decrease" type="button">−</button>
+              <input class="qty-input" type="number" min="0" max="99" value="0" />
+              <button class="qty-increase" type="button">+</button>
+            </div>
+            <div class="choose">
+              <label><input class="choose-checkbox" type="checkbox" /> Pilih</label>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD: Matcha Latte -->
+      <article class="card" data-name="Matcha Latte" data-price="22000">
+        <div class="thumb"><img src="images/matcha.jpeg" alt="Matcha Latte"></div>
+        <div class="meta">
+          <h3>Matcha Latte</h3>
+          <p class="desc">Matcha pilihan, creamy dan lembut — alternatif non-coffee favorite.</p>
+          <div class="price">Rp 22.000</div>
+
+          <div class="controls">
+            <div class="qty" aria-label="Kuantitas Matcha Latte">
+              <button class="qty-decrease" type="button">−</button>
+              <input class="qty-input" type="number" min="0" max="99" value="0" />
+              <button class="qty-increase" type="button">+</button>
+            </div>
+            <div class="choose">
+              <label><input class="choose-checkbox" type="checkbox" /> Pilih</label>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD: Es Kopi Susu -->
+      <article class="card" data-name="Es Kopi Susu" data-price="20000">
+        <div class="thumb"><img src="images/eskopisusu.jpeg" alt="Es Kopi Susu"></div>
+        <div class="meta">
+          <h3>Es Kopi Susu</h3>
+          <p class="desc">Klasik lokal, manis pas dan menyegarkan untuk siang hari.</p>
+          <div class="price">Rp 20.000</div>
+
+          <div class="controls">
+            <div class="qty" aria-label="Kuantitas Es Kopi Susu">
+              <button class="qty-decrease" type="button">−</button>
+              <input class="qty-input" type="number" min="0" max="99" value="0" />
+              <button class="qty-increase" type="button">+</button>
+            </div>
+            <div class="choose">
+              <label><input class="choose-checkbox" type="checkbox" /> Pilih</label>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div> <!-- /.order-row -->
+
+    <!-- bottom summary + action -->
+    <div class="order-bottom">
+      <div class="summary" id="summaryText">Belum ada pesanan terpilih.</div>
+      <div>
+        <button class="btn-order" id="orderBtn">Order via WhatsApp</button>
+      </div>
+    </div>
+
+  </main>
+
+ <script src="order.js"></script>
+</body>
+</html>
